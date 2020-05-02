@@ -1,0 +1,60 @@
+.userlist
+    width: 28%
+    height: 100%
+    padding: 0 20px
+    border-radius: 20px
+    background-color: #21D4FD
+    background-image: linear-gradient(19deg, #21D4FD 10%, #B721FF 63%)
+
+.user
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
+    background: #fff
+    border-radius: 20px
+    padding: 10px
+    .avatar
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        overflow: hidden
+        position: relative
+        background: #b721ff
+        p
+            font-size: 18px
+            text-transform: uppercase
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            color: #fff
+    .userInfo
+        -webkit-max-width: content
+        -moz-max-width: content
+        -ms-max-width: content
+        -o-max-width: content
+        max-width: content
+        padding-left: 15px
+        .name
+            font-size: 16px
+            position: relative
+
+.currentUser
+    padding: 20px 0
+    height: auto
+
+.otherUsers
+    height: 85%
+    padding-top: 20px
+    border-top: 3px solid #fff
+    overflow: hidden
+    .user
+        margin-top: 20px
+        &:first-child
+            margin-top: 0
+
+.otherUsersIns
+    overflow-y: auto
+    height: 100%
+    padding: 0 0 20px

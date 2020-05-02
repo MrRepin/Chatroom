@@ -1,0 +1,27 @@
+{
+  "name": "chatroom-fullstack-1.0",
+  "version": "1.0.0",
+  "description": "Chatroom for users",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "chat",
+    "chatroom",
+    "fullstack"
+  ],
+  "author": "Dmitry Repin <immisterrepin@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.3"
+  }
+}
