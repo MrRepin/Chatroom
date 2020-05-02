@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Switch, NavLink, Redirect} from 'react-router-dom'
+import {Route, Switch, Redirect} from 'react-router-dom'
 import {connect} from 'react-redux'
 
 import MainLayout from './hoc/Layouts/MainLayout'
@@ -27,19 +27,6 @@ class App extends React.Component {
     render() {
         return (
             <MainLayout>
-                <div calss="nav">
-                    {this.state.links.map((item, index) => {
-                        return (
-                            <NavLink
-                                to={item.to}
-                                exact={item.exact}
-                                key={index}
-                            >
-                                {item.label}
-                            </NavLink>
-                        )
-                    })}
-                </div>
                 <Switch>
                     <Route exact path="/">
                         {!this.props.auth ? <Redirect to="/auth" /> : <Chatroom />}
